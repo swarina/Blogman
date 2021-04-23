@@ -32,7 +32,11 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     #Own
-    'users',
+    'users.apps.UsersConfig',
+    'pages.apps.PagesConfig',
+
+    #Third-party
+    'crispy_forms',
 
     'django.contrib.admin',
     'django.contrib.auth',
@@ -133,3 +137,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #Homepage Redirection after Login-Logout
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
+
+#Django Crispy-Forms
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
