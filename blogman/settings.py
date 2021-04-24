@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     #Own
     'users.apps.UsersConfig',
     'pages.apps.PagesConfig',
+    'articles.apps.ArticlesConfig',
 
     #Third-party
     'crispy_forms',
@@ -45,6 +46,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
+
+#Timezone
+TIME_ZONE = 'Asia/Kolkata'
 
 #Custom User Model
 AUTH_USER_MODEL = 'users.CustomUser'
