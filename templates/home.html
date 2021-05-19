@@ -6,9 +6,10 @@
 
     <div class="jumbotron">
         <h1 class="display-4">Blogman</h1>
-        <p class="lead">A Blogging website built with Django.</p>
+        <p class="lead" id="sub">A Place For All Your Daily Thoughts.</p>
         <p class="lead">
-        <a class="btn btn-primary btn-lg" href="{% url 'article_list' %}" role="button">View All Articles</a>
+        <a class="btn btn-primary btn-lg" href="{% url 'article_list' %}" role="button" id="button">View All Articles</a>
         </p>
     </div>
+
 {% endblock content %}
